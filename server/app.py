@@ -7,9 +7,9 @@ from flask import request
 from flask_restful import Resource
 
 # Local imports
-from config import app, db, api
+from config import app, api
 # Add your model imports
-
+from models import db, Trainer, Monster, TrainerMonster, ShopItem, TrainerItem, Battle
 
 # Views go here!
 
