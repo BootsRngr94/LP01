@@ -15,7 +15,7 @@ from models import db, Trainer, Monster, TrainerMonster, ShopItem, TrainerItem, 
 
 @app.route('/')
 def index():
-    return '<h1>Project Server</h1>'
+    return '<h1>Server up and running!</h1>'
 
 
 if __name__ == '__main__':
