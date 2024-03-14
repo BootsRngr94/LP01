@@ -1,11 +1,11 @@
 #!/usr/bin/env python3
 
 # Standard library imports
-
+from flask import Flask, make_response, jsonify, request
 # Remote library imports
 from flask import request
 from flask_restful import Resource
-
+from flask_migrate import Migrate
 # Local imports
 from config import app, api
 # Add your model imports
