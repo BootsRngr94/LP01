@@ -14,7 +14,7 @@ class Trainer(db.Model):
     __tablename__ = 'trainers'
     trainer_id = db.Column(db.Integer, primary_key=True)
     username = db.Column(db.String)
-    _password_hash = db.Column(db.String)
+    #---Will come back to this if needed--- _password_hash = db.Column(db.String)
     # Define relationships
     trainer_monsters = db.relationship('TrainerMonster', backref='trainer', lazy='dynamic')
     trainer_items = db.relationship('TrainerItem', backref='trainer', lazy='dynamic')
